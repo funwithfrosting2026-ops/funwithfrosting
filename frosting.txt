@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun with Frosting | Custom Cakes</title>
+  <style>
+    :root {
+      --cream: #fff4e6;
+      --blush: #f9c5b3;
+      --taupe: #8b5e58;
+      --rose: #e19a8c;
+      --gray: #b0a29d;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      background-color: var(--cream);
+      color: var(--taupe);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: var(--rose);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-bottom: 1px solid var(--gray);
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    header {
+      background-color: var(--blush);
+      padding: 4rem 1.5rem;
+      text-align: center;
+      color: var(--taupe);
+      position: relative;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--taupe);
+    }
+
+    .logo span { font-weight: 400; }
+
+    section { padding: 4rem 1.5rem; max-width: 1000px; margin: auto; text-align: center; }
+    h2 { font-size: 2.2rem; margin-bottom: 1rem; color: var(--taupe); border-bottom: 2px solid var(--gray); display: inline-block; padding-bottom: 0.3rem; }
+
+    .card { background-color: var(--white); border-radius: 15px; padding: 2.5rem; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 2.5rem; display: inline-block; text-align: left; }
+
+    .button { display: inline-block; background-color: var(--rose); color: var(--white); padding: 1rem 2rem; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 1rem; transition: background 0.3s; }
+    .button:hover { background-color: var(--taupe); }
+
+    form label { display: block; margin-top: 1rem; font-weight: 600; }
+    form input, form textarea, form select { width: 100%; padding: 0.7rem; margin-top: 0.3rem; border-radius: 10px; border: 1px solid #ccc; }
+
+    footer { background-color: var(--rose); text-align: center; padding: 1.5rem; font-size: 0.9rem; color: var(--white); border-top: 1px solid var(--gray); }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .gallery img { width: 100%; border-radius: 12px; object-fit: cover; transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.03); }
+
+    .cake-image { max-width: 600px; margin: 2rem auto; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); }
+
+    @media (max-width: 600px) { .logo { font-size: 2.3rem; flex-direction: column; gap: 0.5rem; } h2 { font-size: 1.8rem; } section { padding:
